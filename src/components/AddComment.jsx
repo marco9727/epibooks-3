@@ -117,7 +117,7 @@ const AddComment = function ({ asin }) {
           <Form.Label>Valutazione</Form.Label>
           <Form.Control
             as="select"
-            value={this.state.comment.rate}
+            value={comment.rate}
             onChange={(e) =>
               // this.setState({
               //   comment: {

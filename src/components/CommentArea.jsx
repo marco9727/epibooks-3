@@ -57,6 +57,7 @@ const CommentArea = function ({ asin }) {
   //   });
 
   useEffect(() => {
+    if (!asin) return; // Se asin è null, interrompi l'esecuzione della funzione
     const fetchComments = () => {
       //La variabile fetchComments è una funzione che viene definita all'interno dell'hook
       // useEffect. Questa funzione è responsabile per eseguire la richiesta HTTP per ottenere
